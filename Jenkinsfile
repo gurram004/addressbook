@@ -2,7 +2,7 @@ node {
    def mvnHome
    stage('Preparation') { // for display purposes
       // Get some code from a GitHub repository
-      checkout scm
+      // checkout scm
       sh 'ls -rlt'
       // Get the Maven tool.
       // ** NOTE: This 'M3' Maven tool must be configured

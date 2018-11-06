@@ -19,18 +19,18 @@
         <repository>
             <id>vaadin-prereleases</id>
             <name>Vaadin Pre-releases</name>
-            <url>https://maven.vaadin.com/vaadin-prereleases</url>
+            <url>http://192.168.0.35:8081/repository/vaadin-prereleases/</url>
         </repository>
         <!-- Essential Vaadin artifacts are in maven central, but maven.vaadin.com 
             contains a huge set of additional libraries. See vaadin.com/directory -->
        <repository>
             <id>vaadin-addons</id>
-            <url>http://maven.vaadin.com/vaadin-addons</url>
+            <url>http://192.168.0.35:8081/repository/vaadin-addons/</url>
         </repository>
 
         <repository>
             <id>vaadin-snapshots</id>
-            <url>http://oss.sonatype.org/content/repositories/vaadin-snapshots/</url>
+            <url>http://192.168.0.35:8081/repository/vaadin-snapshots/</url>
             <releases>
                 <enabled>false</enabled>
             </releases>

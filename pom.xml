@@ -54,10 +54,6 @@
             <id>nexus-releases</id>
             <url>http://192.168.0.35:8081/repository/maven-releases/</url>
         </repository>
-        <repository>
-            <id>addressbook</id>
-            <url>http://192.168.0.35:8081/repository/addressbook/</url>
-        </repository>	    
     </distributionManagement>
 
     <pluginRepositories>

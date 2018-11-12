@@ -7,13 +7,15 @@ node {
       // Get the Maven tool.
       // ** NOTE: This 'M3' Maven tool must be configured
       // **       in the global configuration.           
-      mvnHome = tool 'mvn'
-      jdk =  tool  'java 8u192'
+   tools {
+        maven 'mvn'
+        jdk 'java 8u192'
+         }
    }
    stage('Build') {
       // Run the maven build
       if (isUnix()) {
-         sh "'${mvnHome}/bin/mvn' -Dmaven.test.failure.ignore -Dversion=version clean package"
+         sh " mvn -Dmaven.test.failure.ignore -Dversion=version clean package"
       } else {
          bat(/"${mvnHome}\bin\mvn" -Dmaven.test.failure.ignore clean package/)
       }

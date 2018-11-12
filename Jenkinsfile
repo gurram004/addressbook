@@ -5,7 +5,7 @@ pipeline {
         jdk 'java 8u192'
          }
      parameters {
-        string(name: 'version', defaultValue: '1.1.1', description: 'test version')
+        string(name: 'versionname', defaultValue: '1.1.1', description: 'test version')
      }
    stages   {
       stage ('Preparation') { // for display purposes
@@ -21,7 +21,7 @@ pipeline {
    stage('Build') {
       // Run the maven build
       steps {
-         sh " mvn -Dmaven.test.failure.ignore -Dversion=version clean package"
+         sh " mvn -Dmaven.test.failure.ignore -Dversion=versionname clean package"
       } 
    }
   }

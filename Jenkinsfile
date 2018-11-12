@@ -21,7 +21,7 @@ pipeline {
    stage('Build') {
       // Run the maven build
       steps {
-         sh " mvn -Dmaven.test.failure.ignore -Dversion=versionname clean package"
+         sh " mvn -Dmaven.test.failure.ignore -Dversion=${versionname} clean package"
       } 
    }
   }

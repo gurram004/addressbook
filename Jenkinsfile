@@ -1,5 +1,9 @@
-node {
-   def mvnHome
+pipeline {
+   agent any
+    tools {
+        maven 'mvn'
+        jdk 'java 8u192'
+         }
    stage('Preparation') { // for display purposes
       // Get some code from a GitHub repository
       checkout scm
@@ -7,10 +11,7 @@ node {
       // Get the Maven tool.
       // ** NOTE: This 'M3' Maven tool must be configured
       // **       in the global configuration.           
-   tools {
-        maven 'mvn'
-        jdk 'java 8u192'
-         }
+
    }
    stage('Build') {
       // Run the maven build

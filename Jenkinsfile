@@ -6,6 +6,7 @@ pipeline {
          }
      parameters {
         string(name: 'versionname', defaultValue: '1.1.1', description: 'test version')
+        string(name: 'project.version', defaultValue: '1.1.1', description: 'test version')
      }
    stages   {
       stage ('Preparation') { // for display purposes

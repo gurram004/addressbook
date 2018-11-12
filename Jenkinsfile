@@ -4,6 +4,9 @@ pipeline {
         maven 'mvn'
         jdk 'java 8u192'
          }
+     parameters {
+        string(name: 'version', defaultValue: '1.1.1', description: 'test version')
+     }
    stages   {
       stage ('Preparation') { // for display purposes
       // Get some code from a GitHub repository

@@ -4,10 +4,12 @@ pipeline {
         maven 'mvn'
         jdk 'java 8u192'
          }
-   stage('Preparation') { // for display purposes
+   stages   {
+      stage ('Preparation') { // for display purposes
       // Get some code from a GitHub repository
-      checkout scm
-      sh 'ls -rlt'
+         steps {
+            sh 'ls -rlt'
+         }
       // Get the Maven tool.
       // ** NOTE: This 'M3' Maven tool must be configured
       // **       in the global configuration.           

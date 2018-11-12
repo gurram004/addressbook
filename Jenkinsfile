@@ -8,7 +8,7 @@ node {
       // ** NOTE: This 'M3' Maven tool must be configured
       // **       in the global configuration.           
       mvnHome = tool 'mvn'
-      javaHome =  tool  'java'
+      jdk =  tool  'java 8u192'
    }
    stage('Build') {
       // Run the maven build

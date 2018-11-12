@@ -29,3 +29,4 @@ pipeline {
       step ([$class: 'ArtifactArchiver', artifacts: '*.xml'])
    }
 }
+}

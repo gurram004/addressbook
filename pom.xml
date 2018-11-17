@@ -19,18 +19,18 @@
         <repository>
             <id>vaadin-prereleases</id>
             <name>Vaadin Pre-releases</name>
-            <url>http://192.168.0.104:8081/repository/vaadin-prereleases/</url>
+            <url>https://nexus.devopsprofessional.co.in/repository/vaadin-prereleases/</url>
         </repository>
         <!-- Essential Vaadin artifacts are in maven central, but maven.vaadin.com 
             contains a huge set of additional libraries. See vaadin.com/directory -->
        <repository>
             <id>vaadin-addons</id>
-            <url>http://192.168.0.104:8081/repository/vaadin-addons/</url>
+            <url>https://nexus.devopsprofessional.co.in/repository/vaadin-addons/</url>
         </repository>
 
         <repository>
             <id>vaadin-snapshots</id>
-            <url>http://192.168.0.104:8081/repository/vaadin-snapshots/</url>
+            <url>https://nexus.devopsprofessional.co.in/repository/vaadin-snapshots/</url>
             <releases>
                 <enabled>false</enabled>
             </releases>
@@ -40,7 +40,7 @@
         </repository>
         <repository>
             <id>maven-group</id>
-            <url>http://192.168.0.104:8081/repository/maven-group</url>
+            <url>https://nexus.devosprofessional.co.in/repository/maven-group</url>
         </repository>
 	    
     </repositories>
@@ -48,11 +48,11 @@
     <distributionManagement>
         <snapshotRepository>
             <id>nexus-snapshots</id>
-            <url>http://192.168.0.104:8081/repository/maven-snapshots/</url>
+            <url>https://nexus.devopsprofessional.co.in/repository/maven-snapshots/</url>
         </snapshotRepository>
         <repository>
             <id>nexus-releases</id>
-            <url>http://192.168.0.104:8081/repository/maven-releases/</url>
+            <url>https://nexus.devopsprofessional.co.in/repository/maven-releases/</url>
         </repository>
     </distributionManagement>
 

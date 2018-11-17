@@ -391,7 +391,7 @@
                             <dependency>
                                 <groupId>com.edurekademo.tutorial</groupId>
                                 <artifactId>addressbook</artifactId>
-                                <version>${project.version}</version>
+                                <version>${version}</version>
                             </dependency>
                         </dependencies>
                     </plugin>

@@ -66,5 +66,6 @@ To use the built in server adapters of Eclipse, instead of doing "Run As -> Mave
 - *Do not use the suggested J2EE Preview server* as it is outdated, deprecated and does not support Servlet 3, which is required for this application
 
 New version test r18.11.1.2.2
+Adding sprint-18.11.222
 
 *** End of documentation
